@@ -30,7 +30,7 @@
 
         [HttpPost()]
         [Route("")]
-        public ResponseData CreateUser(CreateUserRequest request)
+        public User CreateUser(CreateUserRequest request)
         {
             UserService userService = new UserService();
             return userService.CreateUser(request);
