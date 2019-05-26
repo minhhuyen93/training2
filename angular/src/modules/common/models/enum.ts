@@ -36,3 +36,8 @@ export interface IEventArg{
     key:string;
     option:any;
 }
+
+export enum HttpStatusCode{
+    OK=200,
+    BadRequest=400
+}

@@ -1,18 +1,24 @@
 ﻿namespace REST.Controllers
 {
     using REST.Common;
+    using REST.Common.Data;
+    using REST.Common.Validation;
     using REST.Entity;
     using REST.Service;
     using System.Collections.Generic;
     using System.Web.Http;
     [RoutePrefix("api/users")]
-    public class UsersController: ApiController
+    public class UsersController : ApiController
     {
         [HttpGet()]
         [Route("")]
-        public IList<User> GetUsers() {
+        public ResponseData GetUsers()
+        {
+            ResponseData response = new ResponseData();
             UserService userService = new UserService();
-            return userService.GetUsers();
+            var users = userService.GetUsers();
+            response.SetData(users);
+            return response;
             //IPaging<User> paging = new Paging<User>();
             //UserService userService = new UserService();
             //paging.SetData(userService.GetUsers());
@@ -22,27 +28,31 @@
         }
         [HttpGet()]
         [Route("{userId}")]
-        public User GetUser(int userId)
+        public ResponseData GetUser(int userId)
         {
+            ResponseData response = new ResponseData();
             UserService userService = new UserService();
-            return userService.GetUser(userId);
+            var user = userService.GetUser(userId);
+            response.SetData(user);
+            return response;
         }
 
         [HttpPost()]
         [Route("")]
-        public User CreateUser(CreateUserRequest request)
+        public ResponseData CreateUser(CreateUserRequest request)
         {
-            UserService userService = new UserService();
-            return userService.CreateUser(request);
-        }
-
-        [HttpPut()]
-        [Route("{userId}")]
-        public void UpdateUser(int userId, UpateUserRequest request)
-        {
-            request.UserId = userId;
-            UserService userService = new UserService();
-            userService.UpdateUser(request);
+            ResponseData response = new ResponseData();
+            try
+            {
+                UserService userService = new UserService();
+                var user = userService.CreateUser(request);
+                response.SetData(user);
+            }
+            catch (ValidationException ex)
+            {
+                response.SetErrors(ex.Errors);
+            }
+            return response;
         }
     }
 }
