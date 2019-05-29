@@ -5,5 +5,5 @@ export interface IResourceManager{
     getLocales():any;
     changeLanguage(languageCode:string):void;
     //addnewUser.firstnameWasRequired => value
-    resolve(key:string):string;
+    resolve(key:string, context?:any):string;
 }

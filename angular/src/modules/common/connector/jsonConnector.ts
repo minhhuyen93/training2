@@ -5,6 +5,7 @@ import { PromiseObservable } from "rxjs/observable/PromiseObservable";
 import { HttpStatusCode, IoCNames } from "../models/enum";
 import { IEventManager } from "../event/ieventManager";
 import { IResponseData } from "../models/iResponseData";
+import { IValidationError } from "../validation/ivalidationError";
 
 export class JSONConnector implements IConnector {
     public get(url: string): Promise {
@@ -15,7 +16,6 @@ export class JSONConnector implements IConnector {
             .map(response => response.json())
             .subscribe((response: any) => {
                 self.handleResponseData(response, promise);
-                //promise.resolve(data);
             }, (errors: any) => {
                 promise.reject(errors);
             });
@@ -49,11 +49,11 @@ export class JSONConnector implements IConnector {
         promise.reject();
     }
 
-    private handleErrors(errors: Array<string>) {
+    private handleErrors(errors: Array<IValidationError>) {
         let eventManger: IEventManager = window.ioc.resolve(IoCNames.IEventManager);
         errors = errors || [];
-        errors.forEach((errorKey: any) => {
-            eventManger.publish(errorKey);
+        errors.forEach((error: IValidationError) => {
+            eventManger.publish(error.errorKey, error.params);
         });
     }
 }

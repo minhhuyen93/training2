@@ -38,20 +38,11 @@
 
         private void Validate(CreateUserRequest request)
         {
-            IList<string> errors = new List<string>();
-            if (request == null)
-            {
-                errors.Add("common.invalid.request");
+            ValidationException validator = ValidationHelper.Validate(request, "common.invalid.request");
+            if (request.UserName=="abc") {
+                validator.Add(new ValidationError("addNewUser.userNameWasUsed", "user_name", request.UserName));
             }
-            if (String.IsNullOrWhiteSpace(request.FirstName))
-            {
-                errors.Add("addNewUser.firstNameWasRequired");
-            }
-            if (String.IsNullOrWhiteSpace(request.LastName))
-            {
-                errors.Add("addNewUser.lastNameWasRequired");
-            }
-            throw new ValidationException(errors);
+            validator.ThrowIfError(); ;
         }
         internal void UpdateUser(UpateUserRequest request)
         {

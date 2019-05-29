@@ -2,7 +2,7 @@ import { IResourceManager } from "./iresourceManager";
 import { Promise, PromiseFactory } from "../models/promise";
 import { IConnector } from "../connector/iconnector";
 import { IoCNames, LanguageCode } from "../models/enum";
-
+import templateHelper from "../helpers/templateHelper";
 export class ResourceManager implements IResourceManager{
     private numberOfLocales: number=0;
     private locales:any={};
@@ -58,12 +58,13 @@ export class ResourceManager implements IResourceManager{
      * 
      * result="First name was requried"
      */
-    public resolve(key:string):string{
+    public resolve(key:string, context:any=null):string{
         let segments:Array<string>=key.split(".");
         let result=this.locales;
         segments.forEach((segment:string)=>{
             result=result[segment];
         });
+        result = templateHelper.compile(result, context);
         return result;
     }
 }

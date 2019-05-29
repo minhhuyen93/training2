@@ -1,7 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace REST.Entity
+﻿namespace REST.Entity
 {
+    using REST.Common.Validation.Attr;
     public class User
     {
         public int Id { get; set; }
@@ -9,13 +8,5 @@ namespace REST.Entity
         public string LastName { get; set; }
         public string UserName { get; set; }
         public UserStatus Status { get; set; }
-        [NotMapped()]
-        public string URI
-        {
-            get
-            {
-                return string.Format("http://localhost:60105/api/users/{0}", this.Id);
-            }
-        }
     }
 }

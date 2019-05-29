@@ -25,7 +25,7 @@ export class Validation extends BaseComponent implements AfterContentInit{
             this.ui.nativeElement.title="";
         }else{
             this.ui.nativeElement.classList.add(ValidationConst.INVALID_STATE);
-            this.ui.nativeElement.title=this.i18nHelper.resolve(arg.key);
+            this.ui.nativeElement.title=this.i18nHelper.resolve(arg.key, arg.option);
         }
     }
 }

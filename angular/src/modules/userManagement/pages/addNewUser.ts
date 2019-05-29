@@ -19,7 +19,9 @@ import { IUserService } from "../_shared/services/iuserService";
                 [label]="i18n.addNewUser.lastName" 
                 [(model)]="model.lastName"
             ></form-text-input>
-            <form-text-input [label]="i18n.addNewUser.userName" [(model)]="model.userName"></form-text-input>
+            <form-text-input [label]="i18n.addNewUser.userName" 
+            [(model)]="model.userName"
+            [validation]="['addNewUser.userNameWasUsed']"></form-text-input>
             <form-buttons>
                 <button type="button" class="btn btn-primary" (click)="onSaveClicked($event)">{{i18n.common.form.save}}</button>
                 <button type="button" class="btn btn-default" (click)="onCancelClicked($event)">{{i18n.common.form.cancel}}</button>

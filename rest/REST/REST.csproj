@@ -166,10 +166,15 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Common\Data\ResponseData.cs" />
+    <Compile Include="Common\Helper\NumberHelper.cs" />
     <Compile Include="Common\IPaging.cs" />
     <Compile Include="Common\Paging.cs" />
     <Compile Include="Common\PagingInfo.cs" />
+    <Compile Include="Common\Validation\Attr\Required.cs" />
+    <Compile Include="Common\Validation\BaseValidationAttribute.cs" />
+    <Compile Include="Common\Validation\ValidationError.cs" />
     <Compile Include="Common\Validation\ValidationException.cs" />
+    <Compile Include="Common\Validation\ValidationHelper.cs" />
     <Compile Include="Context\RESTDbContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserGroupsController.cs" />
