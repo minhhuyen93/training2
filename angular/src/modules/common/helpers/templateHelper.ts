@@ -5,11 +5,11 @@ let helper = {
 export default helper;
 
 function compile(str: string, context: any = null) {
-    if (context == null) { return; }
-    for(let pro  in context){
-        if(!context.hasOwnProperty(pro)){continue;}
+    if (context == null) { return str; }
+    for (let pro in context) {
+        if (!context.hasOwnProperty(pro)) { continue; }
         str = str.replace(
-            "{{"+pro+"}}",
+            "{{" + pro + "}}",
             context[pro]
         );
     }
