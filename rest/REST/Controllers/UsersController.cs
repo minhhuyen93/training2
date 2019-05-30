@@ -1,6 +1,7 @@
 ﻿namespace REST.Controllers
 {
     using REST.Common;
+    using REST.Common.Attribute;
     using REST.Common.Data;
     using REST.Common.Validation;
     using REST.Entity;
@@ -12,47 +13,28 @@
     {
         [HttpGet()]
         [Route("")]
-        public ResponseData GetUsers()
+        [ResponseWrapper()]
+        public IList<User> GetUsers()
         {
-            ResponseData response = new ResponseData();
             UserService userService = new UserService();
-            var users = userService.GetUsers();
-            response.SetData(users);
-            return response;
-            //IPaging<User> paging = new Paging<User>();
-            //UserService userService = new UserService();
-            //paging.SetData(userService.GetUsers());
-            //paging.SetTotalPage(10);
-            //paging.SetPageIndex(5);
-            //return paging;
+            return userService.GetUsers();
         }
         [HttpGet()]
         [Route("{userId}")]
-        public ResponseData GetUser(int userId)
+        [ResponseWrapper()]
+        public User GetUser(int userId)
         {
-            ResponseData response = new ResponseData();
             UserService userService = new UserService();
-            var user = userService.GetUser(userId);
-            response.SetData(user);
-            return response;
+            return userService.GetUser(userId);
         }
 
         [HttpPost()]
         [Route("")]
-        public ResponseData CreateUser(CreateUserRequest request)
+        [ResponseWrapper()]
+        public User CreateUser(CreateUserRequest request)
         {
-            ResponseData response = new ResponseData();
-            try
-            {
                 UserService userService = new UserService();
-                var user = userService.CreateUser(request);
-                response.SetData(user);
-            }
-            catch (ValidationException ex)
-            {
-                response.SetErrors(ex.Errors);
-            }
-            return response;
+                return userService.CreateUser(request);
         }
     }
 }

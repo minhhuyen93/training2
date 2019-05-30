@@ -26,5 +26,10 @@
             this.Status = HttpStatusCode.BadRequest;
             this.Errors = errors;
         }
+
+        internal void SetStatus(HttpStatusCode status)
+        {
+            this.Status = status;
+        }
     }
 }
