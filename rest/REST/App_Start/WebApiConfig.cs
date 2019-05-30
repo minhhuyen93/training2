@@ -1,4 +1,6 @@
 ﻿using Newtonsoft.Json.Serialization;
+using REST.Common.IoC;
+using REST.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +23,8 @@ namespace REST
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            IoC.RegisterAsSingleton<IUserService, UserService>();
         }
     }
 }

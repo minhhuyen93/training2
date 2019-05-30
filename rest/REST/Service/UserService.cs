@@ -6,21 +6,21 @@
     using REST.Common.Validation;
     using REST.Context;
     using REST.Entity;
-    public class UserService
+    public class UserService: IUserService
     {
-        internal IList<User> GetUsers()
+        public IList<User> GetUsers()
         {
             RESTDbContext context = new RESTDbContext();
             return context.Users.ToList();
         }
 
-        internal User GetUser(int userId)
+        public User GetUser(int userId)
         {
             RESTDbContext context = new RESTDbContext();
             return context.Users.FirstOrDefault(item => item.Id == userId);
         }
 
-        internal User CreateUser(CreateUserRequest request)
+        public User CreateUser(CreateUserRequest request)
         {
             this.Validate(request);
             RESTDbContext context = new RESTDbContext();
@@ -44,7 +44,7 @@
             }
             validator.ThrowIfError(); ;
         }
-        internal void UpdateUser(UpateUserRequest request)
+        public void UpdateUser(UpateUserRequest request)
         {
             RESTDbContext context = new RESTDbContext();
             User user = context.Users.FirstOrDefault(item => item.Id == request.UserId);

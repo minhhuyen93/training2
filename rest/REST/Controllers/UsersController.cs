@@ -1,9 +1,7 @@
 ﻿namespace REST.Controllers
 {
-    using REST.Common;
     using REST.Common.Attribute;
-    using REST.Common.Data;
-    using REST.Common.Validation;
+    using REST.Common.IoC;
     using REST.Entity;
     using REST.Service;
     using System.Collections.Generic;
@@ -16,7 +14,8 @@
         [ResponseWrapper()]
         public IList<User> GetUsers()
         {
-            UserService userService = new UserService();
+            var userService = IoC.Resolve<IUserService>();
+
             return userService.GetUsers();
         }
         [HttpGet()]
@@ -33,8 +32,8 @@
         [ResponseWrapper()]
         public User CreateUser(CreateUserRequest request)
         {
-                UserService userService = new UserService();
-                return userService.CreateUser(request);
+            var userService = IoC.Resolve<IUserService>();
+            return userService.CreateUser(request);
         }
     }
 }
