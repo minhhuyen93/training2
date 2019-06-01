@@ -14,7 +14,7 @@
         [ResponseWrapper()]
         public IList<User> GetUsers()
         {
-            var userService = IoC.Resolve<IUserService>();
+            IUserService userService = IoC.Resolve<IUserService>();
 
             return userService.GetUsers();
         }
@@ -23,7 +23,7 @@
         [ResponseWrapper()]
         public User GetUser(int userId)
         {
-            UserService userService = new UserService();
+            IUserService userService = IoC.Resolve<IUserService>();
             return userService.GetUser(userId);
         }
 
@@ -32,7 +32,7 @@
         [ResponseWrapper()]
         public User CreateUser(CreateUserRequest request)
         {
-            var userService = IoC.Resolve<IUserService>();
+            IUserService userService = IoC.Resolve<IUserService>();
             return userService.CreateUser(request);
         }
     }

@@ -1,18 +1,17 @@
 ﻿using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 
-namespace REST.Common.IoC.Castle
+namespace REST.Common.IoC.CastleContainer
 {
     public class BaseContainer : IBaseContainer
     {
-        private IWindsorContainer container;
+        IWindsorContainer container;
         public BaseContainer()
         {
             this.container = new WindsorContainer();
         }
-        public void RegisterAsSingleton<IInterface, Impl>()
-            where IInterface : class
-            where Impl : IInterface
+
+        public void RegisterAsSingleton<IInterface, Impl>() where IInterface : class where Impl : IInterface
         {
             this.container.Register(Component.For<IInterface>().ImplementedBy<Impl>());
         }

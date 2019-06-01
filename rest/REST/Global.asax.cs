@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using REST.Common.Helper;
+using REST.Common.IoC;
+using REST.Common.Task;
+using REST.Service;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -18,6 +18,14 @@ namespace REST
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AssemblyHelper.Execute<IApplicationStarted>();
+            AssemblyHelper.Execute<IBootStrapper>();
+            AssemblyHelper.Execute<IApplicationReady>();
+        }
+
+        protected void Application_End()
+        {
+            AssemblyHelper.Execute<IApplicationEnd>();
         }
     }
 }

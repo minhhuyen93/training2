@@ -1,6 +1,6 @@
 ﻿namespace REST.Common.IoC
 {
-    using REST.Common.IoC.Castle;
+    using REST.Common.IoC.CastleContainer;
     public class IoC
     {
         static IBaseContainer container;
@@ -14,7 +14,7 @@
         }
 
         public static void RegisterAsSingleton<IInterface, Impl>()
-            where Impl : IInterface where IInterface : class
+            where IInterface : class where Impl : IInterface
         {
             IoC.container.RegisterAsSingleton<IInterface, Impl>();
         }
