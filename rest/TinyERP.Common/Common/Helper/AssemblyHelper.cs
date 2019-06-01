@@ -15,9 +15,11 @@
             IList<Type> types = new List<Type>();
             foreach (string file in assemblys)
             {
-                IList<System.Type> assemblyTypes = Assembly.Load(file).GetTypes().Where(item => !item.IsAbstract && item.IsClass && typeof(ITask).IsAssignableFrom(item)).ToList();
+                IList<System.Type> assemblyTypes = Assembly.Load(file)
+                    .GetTypes()
+                    .Where(item => !item.IsAbstract && item.IsClass && typeof(ITask).IsAssignableFrom(item))
+                    .ToList();
                 types = types.Concat(assemblyTypes).ToList();
-
             }
             if (types.Count() == 0) { return; }
             foreach (Type item in types)
@@ -42,7 +44,9 @@
         public static IList<string> GetApplicationDlls(string filePattern="*.dll")
         {
             var binFolder = AssemblyHelper.GetBinDirectory();
-            IList<string> files = Directory.GetFiles(binFolder, filePattern).Where(file => file.StartsWith("TinyERP.")).Select(fileItem => Path.GetFileNameWithoutExtension(fileItem)).ToList();
+            IList<string> files = Directory.GetFiles(binFolder, filePattern)
+                .Where(file => Path.GetFileName(file).StartsWith("TinyERP."))
+                .Select(fileItem => Path.GetFileNameWithoutExtension(fileItem)).ToList();
             return files;
         }
     }

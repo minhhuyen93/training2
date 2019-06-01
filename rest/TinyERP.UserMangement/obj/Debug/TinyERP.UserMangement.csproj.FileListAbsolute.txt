@@ -1,5 +1,3 @@
-G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.csprojResolveAssemblyReference.cache
-G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.csproj.CoreCompileInputs.cache
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\TinyERP.UserMangement.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\TinyERP.UserMangement.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\TinyERP.UserMangement.pdb
@@ -18,6 +16,8 @@ G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\Sys
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\Castle.Windsor.xml
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\System.Net.Http.Formatting.xml
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\Castle.Core.xml
+G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.csprojResolveAssemblyReference.cache
+G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.csproj.CoreCompileInputs.cache
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.pdb

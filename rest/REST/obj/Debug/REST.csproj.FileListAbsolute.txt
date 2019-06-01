@@ -161,7 +161,12 @@ G:\training\learningarchitech\training2\rest\REST\bin\System.Web.Razor.dll
 G:\training\learningarchitech\training2\rest\REST\bin\System.Web.WebPages.Deployment.dll
 G:\training\learningarchitech\training2\rest\REST\bin\System.Web.WebPages.dll
 G:\training\learningarchitech\training2\rest\REST\bin\System.Web.WebPages.Razor.dll
+G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.Common.dll
+G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.UserMangement.dll
 G:\training\learningarchitech\training2\rest\REST\bin\WebGrease.dll
+G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.Common.pdb
+G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.UserMangement.pdb
+G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.UserMangement.dll.config
 G:\training\learningarchitech\training2\rest\REST\bin\Castle.Core.xml
 G:\training\learningarchitech\training2\rest\REST\bin\Castle.Windsor.xml
 G:\training\learningarchitech\training2\rest\REST\bin\EntityFramework.xml
@@ -181,13 +186,8 @@ G:\training\learningarchitech\training2\rest\REST\bin\Antlr3.Runtime.pdb
 G:\training\learningarchitech\training2\rest\REST\bin\System.Diagnostics.DiagnosticSource.xml
 G:\training\learningarchitech\training2\rest\REST\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 G:\training\learningarchitech\training2\rest\REST\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.csprojResolveAssemblyReference.cache
 G:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.csproj.CoreCompileInputs.cache
 G:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.dll
 G:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.pdb
-G:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.csprojResolveAssemblyReference.cache
-G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.Common.dll
-G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.Common.pdb
-G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.UserMangement.dll
-G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.UserMangement.pdb
-G:\training\learningarchitech\training2\rest\REST\bin\TinyERP.UserMangement.dll.config
