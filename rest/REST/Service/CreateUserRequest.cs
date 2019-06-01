@@ -1,6 +1,7 @@
-﻿namespace REST.Service
+﻿using TinyERP.Common.Common.Validation.Attr;
+
+namespace REST.Service
 {
-    using REST.Common.Validation.Attr;
     public class CreateUserRequest
     {
         [Required("addNewUser.firstNameWasRequired")]

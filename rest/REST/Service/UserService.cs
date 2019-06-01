@@ -1,11 +1,11 @@
 ﻿namespace REST.Service
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
-    using REST.Common.Validation;
     using REST.Context;
     using REST.Entity;
+    using TinyERP.Common.Common.Validation;
+
     public class UserService: IUserService
     {
         public IList<User> GetUsers()

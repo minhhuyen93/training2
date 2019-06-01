@@ -172,46 +172,12 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Common\Attribute\ResponseWrapper.cs" />
-    <Compile Include="Common\Data\ResponseData.cs" />
-    <Compile Include="Common\Helper\AssemblyHelper.cs" />
-    <Compile Include="Common\Helper\NumberHelper.cs" />
-    <Compile Include="Common\IoC\IBaseContainer.cs" />
-    <Compile Include="Common\IoC\IoC.cs" />
-    <Compile Include="Common\IoC\IoCContainer.cs" />
-    <Compile Include="Common\IoC\CastleContainer\BaseContainer.cs" />
-    <Compile Include="Common\IPaging.cs" />
-    <Compile Include="Common\Paging.cs" />
-    <Compile Include="Common\PagingInfo.cs" />
-    <Compile Include="Common\Task\IApplicationEnd.cs" />
-    <Compile Include="Common\Task\IApplicationReady.cs" />
-    <Compile Include="Common\Task\IApplicationStarted.cs" />
-    <Compile Include="Common\Task\IBaseTask.cs" />
-    <Compile Include="Common\Task\IBootStrapper.cs" />
-    <Compile Include="Common\Validation\Attr\Required.cs" />
-    <Compile Include="Common\Validation\BaseValidationAttribute.cs" />
-    <Compile Include="Common\Validation\ValidationError.cs" />
-    <Compile Include="Common\Validation\ValidationException.cs" />
-    <Compile Include="Common\Validation\ValidationHelper.cs" />
-    <Compile Include="Context\RESTDbContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\UserGroupsController.cs" />
-    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="Entity\Enum.cs" />
-    <Compile Include="Entity\User.cs" />
-    <Compile Include="Entity\UserGroup.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\CreateUserRequest.cs" />
-    <Compile Include="Service\IUserService.cs" />
-    <Compile Include="Service\UpateUserRequest.cs" />
-    <Compile Include="Service\UserGroupService.cs" />
-    <Compile Include="Service\UserService.cs" />
-    <Compile Include="Task\BootStrapper.cs" />
-    <Compile Include="Task\CreateDefaultUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -298,6 +264,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TinyERP.Common\TinyERP.Common.csproj">
+      <Project>{94b0f3af-0afe-4976-b3e0-d43f4545280f}</Project>
+      <Name>TinyERP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TinyERP.UserMangement\TinyERP.UserMangement.csproj">
+      <Project>{ea94fdc2-223d-4893-a436-c5667e006e03}</Project>
+      <Name>TinyERP.UserMangement</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

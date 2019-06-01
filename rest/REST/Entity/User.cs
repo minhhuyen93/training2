@@ -1,6 +1,5 @@
 ﻿namespace REST.Entity
 {
-    using REST.Common.Validation.Attr;
     public class User
     {
         public int Id { get; set; }

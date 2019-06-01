@@ -1,8 +1,9 @@
 ﻿namespace REST.Task
 {
-    using REST.Common.IoC;
-    using REST.Common.Task;
-    using REST.Service;
+    using TinyERP.Common.Common.IoC;
+    using TinyERP.Common.Common.Task;
+    using TinyERP.UserMangement.Service;
+
     public class BootStrapper : IBootStrapper
     {
         public void Execute()
