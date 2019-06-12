@@ -5,22 +5,22 @@
     {
         public static ValidationException Validate(object request, string nullErrorKey = "")
         {
-            ValidationException validator = new ValidationException();
+            ValidationException validation = new ValidationException();
             if (request == null)
             {
-                validator.Add(new ValidationError(nullErrorKey));
-                return validator;
+                validation.Add(new ValidationError(nullErrorKey));
+                return validation;
             }
-            PropertyInfo[] properties = request.GetType().GetProperties();
-            foreach (PropertyInfo pro in properties)
+            PropertyInfo[] pros = request.GetType().GetProperties();
+            foreach (PropertyInfo pro in pros)
             {
                 BaseValidationAttribute validationAttribute = pro.GetCustomAttribute<BaseValidationAttribute>(true);
                 if (validationAttribute == null) { continue; }
                 object val = pro.GetMethod.Invoke(request, new object[] { });
                 if (validationAttribute.IsValid(val)) { continue; }
-                validator.Add(new ValidationError(validationAttribute.ErrorKey));
+                validation.Add(new ValidationError(validationAttribute.ErrorKey));
             }
-            return validator;
+            return validation;
         }
     }
 }

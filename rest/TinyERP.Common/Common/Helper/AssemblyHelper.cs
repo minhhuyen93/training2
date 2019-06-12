@@ -11,20 +11,17 @@
     {
         public static void Execute<ITask>() where ITask : IBaseTask
         {
-            IList<string> assemblys = AssemblyHelper.GetApplicationDlls();
+            IList<string> applicationDlls = AssemblyHelper.GetApplicationDlls();
             IList<Type> types = new List<Type>();
-            foreach (string file in assemblys)
+            foreach (var assembly in applicationDlls)
             {
-                IList<System.Type> assemblyTypes = Assembly.Load(file)
-                    .GetTypes()
-                    .Where(item => !item.IsAbstract && item.IsClass && typeof(ITask).IsAssignableFrom(item))
-                    .ToList();
-                types = types.Concat(assemblyTypes).ToList();
+                IList<Type> fileTypes = Assembly.Load(assembly).GetTypes().Where(item => !item.IsAbstract && item.IsClass && typeof(ITask).IsAssignableFrom(item)).ToList();
+                types = types.Concat(fileTypes).ToList();
             }
             if (types.Count() == 0) { return; }
-            foreach (Type item in types)
+            foreach (var type in types)
             {
-                ITask task = AssemblyHelper.CreateInstance<ITask>(item);
+                ITask task = AssemblyHelper.CreateInstance<ITask>(type);
                 task.Execute();
             }
         }
@@ -35,19 +32,20 @@
             return (ITask)result;
         }
 
-        private static string GetBinDirectory()
+        private static IList<string> GetApplicationDlls(string filePattern="*.dll")
         {
-            var binFolderPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().EscapedCodeBase).Replace("file:\\", string.Empty);
-            return binFolderPath;
+            var binPath = AssemblyHelper.GetBinDirectoryPath();
+            IList<string> dlls = Directory.GetFiles(binPath, filePattern)
+                .Where(item => Path.GetFileName(item).StartsWith("TinyERP."))
+                .Select(fileItem => Path.GetFileNameWithoutExtension(fileItem))
+                .ToList();
+            return dlls;
         }
 
-        public static IList<string> GetApplicationDlls(string filePattern="*.dll")
+        private static string GetBinDirectoryPath()
         {
-            var binFolder = AssemblyHelper.GetBinDirectory();
-            IList<string> files = Directory.GetFiles(binFolder, filePattern)
-                .Where(file => Path.GetFileName(file).StartsWith("TinyERP."))
-                .Select(fileItem => Path.GetFileNameWithoutExtension(fileItem)).ToList();
-            return files;
+            var binPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().EscapedCodeBase).Replace("file:\\", string.Empty);
+            return binPath;
         }
     }
 }

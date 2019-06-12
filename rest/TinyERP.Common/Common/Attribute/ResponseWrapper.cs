@@ -15,18 +15,19 @@
             {
                 response.SetStatus(HttpStatusCode.InternalServerError);
             }
-            if (actionExecutedContext.Exception != null && (actionExecutedContext.Exception is ValidationException))
+            if (actionExecutedContext.Exception != null && actionExecutedContext.Exception is ValidationException)
             {
                 ValidationException exception = actionExecutedContext.Exception as ValidationException;
                 response.SetErrors(exception.Errors);
                 response.SetStatus(HttpStatusCode.BadRequest);
             }
-            if (actionExecutedContext.Exception == null && actionExecutedContext.Response.StatusCode != System.Net.HttpStatusCode.NoContent)
+            if (actionExecutedContext.Exception == null && actionExecutedContext.Response.StatusCode != HttpStatusCode.NoContent)
             {
                 ObjectContent content = (ObjectContent)actionExecutedContext.Response.Content;
                 response.SetData(content.Value);
+                response.SetStatus(HttpStatusCode.OK);
             }
-            actionExecutedContext.Response = actionExecutedContext.Request.CreateResponse(System.Net.HttpStatusCode.OK, response);
+            actionExecutedContext.Response = actionExecutedContext.Request.CreateResponse(HttpStatusCode.OK, response);
         }
     }
 }

@@ -13,3 +13,4 @@ G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Co
 G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.pdb
+G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.csprojResolveAssemblyReference.cache

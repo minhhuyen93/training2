@@ -16,7 +16,7 @@ namespace REST
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            //AssemblyHelper.Execute<IApplicationStarted>();
+            AssemblyHelper.Execute<IApplicationStarted>();
             AssemblyHelper.Execute<IBootStrapper>();
             //AssemblyHelper.Execute<IApplicationReady>();
         }
