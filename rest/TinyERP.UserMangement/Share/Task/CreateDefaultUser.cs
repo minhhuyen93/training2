@@ -6,7 +6,6 @@ namespace TinyERP.UserMangement.Share.Task
     {
         public void Execute()
         {
-            string aa = "huyen new";
         }
     }
 }
