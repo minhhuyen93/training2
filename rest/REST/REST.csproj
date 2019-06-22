@@ -270,6 +270,10 @@
       <Project>{94b0f3af-0afe-4976-b3e0-d43f4545280f}</Project>
       <Name>TinyERP.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TinyERP.Course\TinyERP.Course.csproj">
+      <Project>{18d88630-081c-4b3c-aa76-80a877fcb474}</Project>
+      <Name>TinyERP.Course</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TinyERP.UserMangement\TinyERP.UserMangement.csproj">
       <Project>{ea94fdc2-223d-4893-a436-c5667e006e03}</Project>
       <Name>TinyERP.UserMangement</Name>

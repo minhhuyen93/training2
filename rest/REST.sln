@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyERP.Common", "TinyERP.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyERP.UserMangement", "TinyERP.UserMangement\TinyERP.UserMangement.csproj", "{EA94FDC2-223D-4893-A436-C5667E006E03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyERP.Course", "TinyERP.Course\TinyERP.Course.csproj", "{18D88630-081C-4B3C-AA76-80A877FCB474}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EA94FDC2-223D-4893-A436-C5667E006E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA94FDC2-223D-4893-A436-C5667E006E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA94FDC2-223D-4893-A436-C5667E006E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D88630-081C-4B3C-AA76-80A877FCB474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D88630-081C-4B3C-AA76-80A877FCB474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D88630-081C-4B3C-AA76-80A877FCB474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D88630-081C-4B3C-AA76-80A877FCB474}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

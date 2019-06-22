@@ -4,7 +4,8 @@ export const IoCNames={
     IConnector:"IConnector",
     IResourceManager:"IResourceManager",
     IEventManager:"IEventManager",
-    IUserGroupService:"IUserGroupService"
+    IUserGroupService:"IUserGroupService",
+    ICourseService: "ICourseService"
 };
 export enum IoCLifeCycle{
     Singleton=1,
