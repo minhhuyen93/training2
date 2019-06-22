@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyERP.UserMangement", "Ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyERP.Course", "TinyERP.Course\TinyERP.Course.csproj", "{18D88630-081C-4B3C-AA76-80A877FCB474}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyERP.UserManagement.Share", "TinyERP.UserManagement.Share\TinyERP.UserManagement.Share.csproj", "{B216A826-9E1D-44AC-B67A-FA3AC3C3008D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{18D88630-081C-4B3C-AA76-80A877FCB474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D88630-081C-4B3C-AA76-80A877FCB474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D88630-081C-4B3C-AA76-80A877FCB474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B216A826-9E1D-44AC-B67A-FA3AC3C3008D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B216A826-9E1D-44AC-B67A-FA3AC3C3008D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B216A826-9E1D-44AC-B67A-FA3AC3C3008D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B216A826-9E1D-44AC-B67A-FA3AC3C3008D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,6 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using TinyERP.Common.Common.Validation;
+    using TinyERP.UserManagement.Share.Dto;
     using TinyERP.UserMangement.Aggregate;
     using TinyERP.UserMangement.Context;
 
@@ -52,6 +53,13 @@
             user.LastName = request.LastName;
             user.UserName = request.UserName;
             context.SaveChanges();
+        }
+
+        public User GetUserByUserName(string userName)
+        {
+            RESTDbContext context = new RESTDbContext();
+            User user = context.Users.FirstOrDefault(item => item.UserName.ToLower() == userName.ToLower());
+            return user;
         }
     }
 }

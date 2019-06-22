@@ -4,6 +4,7 @@
     using System.Web.Http;
     using TinyERP.Common.Common.Attribute;
     using TinyERP.Common.Common.IoC;
+    using TinyERP.UserManagement.Share.Dto;
     using TinyERP.UserMangement.Aggregate;
     using TinyERP.UserMangement.Service;
 
