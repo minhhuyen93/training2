@@ -41,8 +41,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dto\CreateUserRequest.cs" />
+    <Compile Include="Facade\Bootstrapper.cs" />
     <Compile Include="Facade\IUserManagementFacade.cs" />
+    <Compile Include="Facade\RemoteUserManagementFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TinyERP.Common\TinyERP.Common.csproj">
+      <Project>{94B0F3AF-0AFE-4976-B3E0-D43F4545280F}</Project>
+      <Name>TinyERP.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

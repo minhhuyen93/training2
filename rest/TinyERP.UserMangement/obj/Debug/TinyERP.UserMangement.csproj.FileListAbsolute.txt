@@ -23,3 +23,6 @@ G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\Tin
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\obj\Debug\TinyERP.UserMangement.pdb
+G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\TinyERP.Common.dll.config
+G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\TinyERP.UserManagement.Share.dll.config
+G:\training\learningarchitech\training2\rest\TinyERP.UserMangement\bin\Debug\Newtonsoft.Json.xml

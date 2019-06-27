@@ -105,3 +105,5 @@ G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\TinyER
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\TinyERP.Course.Api.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\REST.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\REST.pdb
+G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.Common.dll.config
+G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.UserManagement.Share.dll.config

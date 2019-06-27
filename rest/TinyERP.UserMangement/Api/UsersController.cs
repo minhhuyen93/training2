@@ -37,5 +37,18 @@
             IUserService userService = IoC.Resolve<IUserService>();
             return userService.CreateUser(request);
         }
+        [HttpPost()]
+        [Route("create-if-not-exist")]
+        [ResponseWrapper()]
+        public int CreateUserIfNotExist(CreateUserRequest request) {
+            IUserService service = IoC.Resolve<IUserService>();
+            User user = service.GetUserByUserName(request.UserName);
+            if (user != null)
+            {
+                return user.Id;
+            }
+            user = service.CreateUser(request);
+            return user.Id;
+        }
     }
 }

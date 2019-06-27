@@ -2,3 +2,8 @@ rest/packages/
 angular/resources/
 rest/TinyERP.Course/bin/
 rest/TinyERP.Course/obj/
+rest/TinyERP.UserMangement/bin/
+rest/TinyERP.UserManagement.Share/bin/
+rest/TinyERP.UserManagement.Api/bin/
+rest/TinyERP.Course.Api/bin/
+rest/TinyERP.UserManagement.Share/obj/
