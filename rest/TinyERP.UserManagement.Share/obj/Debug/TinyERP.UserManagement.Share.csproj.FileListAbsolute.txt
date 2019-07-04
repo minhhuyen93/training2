@@ -1,10 +1,6 @@
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.UserManagement.Share.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.UserManagement.Share.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.UserManagement.Share.pdb
-G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csprojResolveAssemblyReference.cache
-G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csproj.CoreCompileInputs.cache
-G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.dll
-G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.pdb
-G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.UserManagement.Share.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.Common.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Castle.Windsor.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\System.Web.Http.dll
@@ -18,4 +14,8 @@ G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\De
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\System.Net.Http.Formatting.xml
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Newtonsoft.Json.xml
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Castle.Core.xml
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csprojResolveAssemblyReference.cache
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csproj.CoreCompileInputs.cache
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csproj.CopyComplete
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.dll
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.pdb

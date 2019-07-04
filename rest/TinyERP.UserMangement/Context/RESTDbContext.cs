@@ -6,7 +6,7 @@
     {
         public DbSet<User> Users { get; set; }
         public DbSet<UserGroup> UserGroups { get; set; }
-        public RESTDbContext() : base("RESTDbContext")
+        public RESTDbContext() : base(TinyERP.Common.Config.Configuration.Instance.UserManagementDbContext.Name)
         {
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<RESTDbContext>());
         }

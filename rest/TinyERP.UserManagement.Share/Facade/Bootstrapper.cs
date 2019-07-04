@@ -1,4 +1,5 @@
-﻿using TinyERP.Common.Common.IoC;
+﻿using System.Configuration;
+using TinyERP.Common.Common.IoC;
 using TinyERP.Common.Common.Task;
 
 namespace TinyERP.UserManagement.Share.Facade
@@ -7,7 +8,11 @@ namespace TinyERP.UserManagement.Share.Facade
     {
         public void Execute()
         {
-            IoC.RegisterAsSingleton<IUserManagementFacade, RemoteUserManagementFacade>();
+            var remote = TinyERP.Common.Config.Configuration.Instance.UserManagement.IntegrationMode;
+            if (remote == Common.IntegrationModeType.Remote)
+            {
+                IoC.RegisterAsSingleton<IUserManagementFacade, RemoteUserManagementFacade>();
+            }
         }
     }
 }

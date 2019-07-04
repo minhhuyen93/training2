@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.Linq;
+    using TinyERP.Common.Common.Data;
     using TinyERP.Common.Common.IoC;
     using TinyERP.Course.Context;
     using TinyERP.Course.Dto;
@@ -12,7 +13,7 @@
     {
         public IList<Entity.Course> GetCourses()
         {
-            CourseDbContext context = new CourseDbContext();
+            ICourseDbContext context = DbContextFactory.Create<ICourseDbContext>();
             return context.Courses.ToList();
         }
 

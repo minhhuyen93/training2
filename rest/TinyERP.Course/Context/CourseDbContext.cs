@@ -2,13 +2,13 @@
 
 namespace TinyERP.Course.Context
 {
-    public class CourseDbContext : DbContext
+    public class CourseDbContext : DbContext, ICourseDbContext
     {
         public CourseDbContext() : base("CourseDbConnectionString")
         {
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CourseDbContext>());
         }
 
-        public DbSet<Entity.Course> Courses { get; set; }
+        public IDbSet<Entity.Course> Courses { get; set; }
     }
 }
