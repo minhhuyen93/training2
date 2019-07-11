@@ -19,3 +19,5 @@ G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\De
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.pdb
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\EntityFramework.dll
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\EntityFramework.xml

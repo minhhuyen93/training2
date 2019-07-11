@@ -8,9 +8,9 @@
         {
             IoC.container = new BaseContainer();
         }
-        public static TResult Resolve<TResult>() where TResult : class
+        public static TResult Resolve<TResult>(params object[] args) where TResult : class
         {
-            return IoC.container.Resolve<TResult>();
+            return IoC.container.Resolve<TResult>(args);
         }
 
         public static void RegisterAsSingleton<IInterface, Impl>()

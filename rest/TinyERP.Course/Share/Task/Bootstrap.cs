@@ -2,6 +2,7 @@
 {
     using TinyERP.Common.Common.IoC;
     using TinyERP.Common.Common.Task;
+    using TinyERP.Course.Repository;
     using TinyERP.Course.Service;
     using TinyERP.UserManagement.Share.Facade;
 
@@ -10,6 +11,7 @@
         public void Execute()
         {
             IoC.RegisterAsSingleton<ICourseService, CourseService>();
+            IoC.RegisterAsSingleton<ICourseRepository, CourseRepository>();
         }
     }
 }

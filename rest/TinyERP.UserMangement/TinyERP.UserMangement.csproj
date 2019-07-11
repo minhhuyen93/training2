@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\UsersController.cs" />
+    <Compile Include="Context\IUserManagementDbContext.cs" />
     <Compile Include="Context\RESTDbContext.cs" />
     <Compile Include="Service\IUserService.cs" />
     <Compile Include="Service\UpateUserRequest.cs" />

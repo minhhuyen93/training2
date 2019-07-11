@@ -59,6 +59,8 @@
     <Compile Include="Dto\CreateCourseRequest.cs" />
     <Compile Include="Entity\Course.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\CourseRepository.cs" />
+    <Compile Include="Repository\ICourseRepository.cs" />
     <Compile Include="Service\CourseService.cs" />
     <Compile Include="Service\ICourseService.cs" />
     <Compile Include="Share\Task\Bootstrap.cs" />

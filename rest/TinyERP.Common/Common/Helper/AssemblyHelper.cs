@@ -20,27 +20,32 @@
             }
         }
 
-        public static IList<Type> GetTypes<ITask>()
+        public static IList<Type> GetTypes<IType>()
         {
             IList<string> applicationDlls = AssemblyHelper.GetApplicationDlls();
             IList<Type> types = new List<Type>();
             foreach (var assembly in applicationDlls)
             {
-                IList<Type> fileTypes = Assembly.Load(assembly).GetTypes().Where(item => !item.IsAbstract && item.IsClass && typeof(ITask).IsAssignableFrom(item)).ToList();
+                IList<Type> fileTypes = Assembly.Load(assembly).GetTypes().Where(item => !item.IsAbstract && item.IsClass && typeof(IType).IsAssignableFrom(item)).ToList();
                 types = types.Concat(fileTypes).ToList();
             }
             return types;
         }
 
-        public static Type GetType<ITask>()
+        internal static IList<Type> GetInterfaceInstance(object interfaceTypeObject)
         {
-            return GetTypes<ITask>().FirstOrDefault();
+            return interfaceTypeObject.GetType().GetInterfaces().Where(item => item.FullName.StartsWith("TinyERP.")).ToList();
         }
 
-        public static ITask CreateInstance<ITask>(Type type)
+        public static Type GetType<IType>()
+        {
+            return GetTypes<IType>().FirstOrDefault();
+        }
+
+        public static IType CreateInstance<IType>(Type type)
         {
             object result = Activator.CreateInstance(type, new object[] { });
-            return (ITask)result;
+            return (IType)result;
         }
 
         private static IList<string> GetApplicationDlls(string filePattern = "*.dll")

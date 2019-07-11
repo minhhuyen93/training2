@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.Linq;
+    using TinyERP.Common.Common.Data;
     using TinyERP.Common.Common.Validation;
     using TinyERP.UserManagement.Share.Dto;
     using TinyERP.UserMangement.Aggregate;
@@ -11,7 +12,7 @@
     {
         public IList<User> GetUsers()
         {
-            RESTDbContext context = new RESTDbContext();
+            IUserManagementDbContext context = DbContextFactory.Create<IUserManagementDbContext>();
             return context.Users.ToList();
         }
 
