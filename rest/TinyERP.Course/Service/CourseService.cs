@@ -4,12 +4,13 @@
     using System.Collections.Generic;
     using TinyERP.Common.Common.Data.Uow;
     using TinyERP.Common.Common.IoC;
+    using TinyERP.Common.Services;
     using TinyERP.Course.Dto;
     using TinyERP.Course.Repository;
     using TinyERP.UserManagement.Share.Dto;
     using TinyERP.UserManagement.Share.Facade;
 
-    public class CourseService : ICourseService
+    public class CourseService : BaseService, ICourseService
     {
         public IList<Entity.Course> GetCourses()
         {
@@ -19,7 +20,8 @@
 
         public void CreateCourse(CreateCourseRequest request)
         {
-            using (IUnitOfWork uow = this.CreateUnitOfWork<Entity.Course>()) {
+            using (IUnitOfWork uow = this.CreateUnitOfWork<Entity.Course>())
+            {
                 IUserManagementFacade facade = IoC.Resolve<IUserManagementFacade>();
                 CreateUserRequest createUserRequest = new CreateUserRequest(request.Author.FirstName, request.Author.LastName, request.Author.UserName);
                 int authorId = facade.CreateUserIfNotExisted(createUserRequest);
@@ -33,11 +35,6 @@
                 courseRepo.Add(courseEntity);
                 uow.Commit();
             }
-        }
-
-        private IUnitOfWork CreateUnitOfWork<T>()
-        {
-            throw new NotImplementedException();
         }
     }
 }

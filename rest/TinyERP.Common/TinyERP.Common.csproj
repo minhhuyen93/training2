@@ -78,6 +78,7 @@
     <Compile Include="Common\Data\ResponseData.cs" />
     <Compile Include="Common\Data\Uow\IUnitOfWork.cs" />
     <Compile Include="Common\Data\Uow\UnitOfWork.cs" />
+    <Compile Include="Common\Data\Uow\UnitOfWorkFactory.cs" />
     <Compile Include="Common\Enum\ConnectorContentType.cs" />
     <Compile Include="Common\Helper\AssemblyHelper.cs" />
     <Compile Include="Common\Helper\JsonHelper.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Config\UserManagementElement.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BaseService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

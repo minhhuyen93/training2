@@ -5,5 +5,7 @@
         TResult Resolve<TResult>(object[] args=null) where TResult :class;
         void RegisterAsSingleton<IInterface, Impl>()
             where Impl : IInterface where IInterface : class;
+        void RegisterAsTransient<IInterface, Impl>()
+            where Impl : IInterface where IInterface : class;
     }
 }

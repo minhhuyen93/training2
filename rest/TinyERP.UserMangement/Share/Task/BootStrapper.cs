@@ -11,7 +11,7 @@
     {
         public void Execute()
         {
-            IoC.RegisterAsSingleton<IUserService, UserService>();
+            IoC.RegisterAsTransient<IUserService, UserService>();
             Common.IntegrationModeType remote = TinyERP.Common.Config.Configuration.Instance.UserManagement.IntegrationMode;
             if (remote != Common.IntegrationModeType.Remote)
             {

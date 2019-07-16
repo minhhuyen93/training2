@@ -19,3 +19,4 @@ G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFram
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.SqlServer.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.SqlServer.xml
+G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.csprojResolveAssemblyReference.cache

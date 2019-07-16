@@ -11,10 +11,9 @@
         {
             this.Context.SaveChanges();
         }
-
         public void Dispose()
         {
-            throw new System.NotImplementedException();
+            this.Context.Dispose();
         }
     }
 }

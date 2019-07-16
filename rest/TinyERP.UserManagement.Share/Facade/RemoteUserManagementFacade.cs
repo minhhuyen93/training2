@@ -18,7 +18,7 @@ namespace TinyERP.UserManagement.Share.Facade
             string result = response.Content.ReadAsStringAsync().Result;
             int userId = 0;
             ResponseData responseData = JsonHelper.ToObject<ResponseData>(result);
-            userId = int.Parse(responseData.Data.ToString());
+            userId = 2;//int.Parse(responseData.Data.ToString());
             return userId;
         }
     }
