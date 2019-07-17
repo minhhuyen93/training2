@@ -1,3 +1,4 @@
+G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\Config\configuration.Config
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\REST.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\REST.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\REST.pdb

@@ -32,5 +32,14 @@ namespace TinyERP.Common.Config
                 return (UserManagementDbContextElement)this["userMangementDbContext"];
             }
         }
+        [ConfigurationProperty("databaseConnections")]
+        [ConfigurationCollection(typeof(DatabaseConnectionElement), AddItemName = "add", RemoveItemName = "remove", ClearItemsName = "clear")]
+        public DatabaseConnectionsElement DatabaseConnections
+        {
+            get
+            {
+                return (DatabaseConnectionsElement)this["databaseConnections"];
+            }
+        }
     }
 }

@@ -73,6 +73,7 @@
     <Compile Include="Common\Data\BaseDbContext.cs" />
     <Compile Include="Common\Data\BaseDbSet.cs" />
     <Compile Include="Common\Data\BaseRepository.cs" />
+    <Compile Include="Common\Data\ConnectionString.cs" />
     <Compile Include="Common\Data\DbContextFactory.cs" />
     <Compile Include="Common\Data\IBaseRepository.cs" />
     <Compile Include="Common\Data\IDbContext.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Common\Enum\ConnectorContentType.cs" />
     <Compile Include="Common\Exceptions\UnSupportException.cs" />
     <Compile Include="Common\Helper\AssemblyHelper.cs" />
+    <Compile Include="Common\Helper\DatabaseConnectionHelper.cs" />
     <Compile Include="Common\Helper\JsonHelper.cs" />
     <Compile Include="Common\Helper\NumberHelper.cs" />
     <Compile Include="Common\Helper\ObjectHelper.cs" />
@@ -104,6 +106,9 @@
     <Compile Include="Common\Validation\ValidationException.cs" />
     <Compile Include="Common\Validation\ValidationHelper.cs" />
     <Compile Include="Config\Configuration.cs" />
+    <Compile Include="Config\DatabaseConnectionElement.cs" />
+    <Compile Include="Config\DatabaseConnectionFactory.cs" />
+    <Compile Include="Config\DatabaseConnectionsElement.cs" />
     <Compile Include="Config\UserManagementDbContextElement.cs" />
     <Compile Include="Config\UserManagementElement.cs" />
     <Compile Include="Enum.cs" />
@@ -117,7 +122,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(ProjectDir)Config\configuration.Config" "$(SolutionDir)TinyERP.Course.Api/Config/" /Y /I
-xcopy "$(ProjectDir)Config\configuration.Config" "$(SolutionDir)TinyERP.UserManagement.Api/Config" /Y /I</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
