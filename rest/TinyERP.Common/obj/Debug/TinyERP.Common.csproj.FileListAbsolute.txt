@@ -3,11 +3,15 @@ G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\TinyERP.Co
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\TinyERP.Common.pdb
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\Castle.Core.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\Castle.Windsor.dll
+G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.dll
+G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.SqlServer.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\Newtonsoft.Json.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\System.Net.Http.Formatting.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\System.Web.Http.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\Castle.Core.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\Castle.Windsor.xml
+G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.xml
+G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.SqlServer.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\Newtonsoft.Json.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\System.Net.Http.Formatting.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\System.Web.Http.xml
@@ -15,8 +19,3 @@ G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Co
 G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.pdb
-G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.dll
-G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.SqlServer.dll
-G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.xml
-G:\training\learningarchitech\training2\rest\TinyERP.Common\bin\Debug\EntityFramework.SqlServer.xml
-G:\training\learningarchitech\training2\rest\TinyERP.Common\obj\Debug\TinyERP.Common.csprojResolveAssemblyReference.cache

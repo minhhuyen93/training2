@@ -1,6 +1,9 @@
 ﻿namespace TinyERP.UserMangement.Aggregate
 {
+    using TinyERP.Common.Common.Attribute;
+    using TinyERP.UserMangement.Context;
     using TinyERP.UserMangement.Share;
+    [DbContextAttribute(Use=typeof(IUserManagementDbContext))]
     public class User
     {
         public int Id { get; set; }

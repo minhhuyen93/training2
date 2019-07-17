@@ -71,6 +71,7 @@
     <Compile Include="Common\Attribute\ResponseWrapper.cs" />
     <Compile Include="Common\Connector\JsonContent.cs" />
     <Compile Include="Common\Data\BaseDbContext.cs" />
+    <Compile Include="Common\Data\BaseDbSet.cs" />
     <Compile Include="Common\Data\BaseRepository.cs" />
     <Compile Include="Common\Data\DbContextFactory.cs" />
     <Compile Include="Common\Data\IBaseRepository.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Common\Data\Uow\UnitOfWork.cs" />
     <Compile Include="Common\Data\Uow\UnitOfWorkFactory.cs" />
     <Compile Include="Common\Enum\ConnectorContentType.cs" />
+    <Compile Include="Common\Exceptions\UnSupportException.cs" />
     <Compile Include="Common\Helper\AssemblyHelper.cs" />
     <Compile Include="Common\Helper\JsonHelper.cs" />
     <Compile Include="Common\Helper\NumberHelper.cs" />

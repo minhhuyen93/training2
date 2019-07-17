@@ -14,7 +14,7 @@
         }
         public IList<Entity.Course> GetCourses()
         {
-            return this.DbSet.ToList();
+            return this.DbSet.AsQueryable().ToList();
         }
     }
 }

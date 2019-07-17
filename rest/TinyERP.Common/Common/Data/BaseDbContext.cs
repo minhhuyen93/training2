@@ -6,9 +6,9 @@ namespace TinyERP.Common.Common.Data
     {
         public BaseDbContext(string connectionString) : base(connectionString)
         { }
-        public IDbSet<TEntity> GetDbSet<TEntity>() where TEntity : class
+        public BaseDbSet<TEntity> GetDbSet<TEntity>(IOMode mode) where TEntity : class
         {
-            return this.Set<TEntity>();
+            return new BaseDbSet<TEntity>(this, mode);
         }
     }
 }

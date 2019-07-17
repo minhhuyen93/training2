@@ -1,8 +1,9 @@
 ﻿namespace TinyERP.UserMangement.Context
 {
     using System.Data.Entity;
+    using TinyERP.Common.Common.Data;
     using TinyERP.UserMangement.Aggregate;
-    public class RESTDbContext : DbContext, IUserManagementDbContext
+    public class RESTDbContext : BaseDbContext, IUserManagementDbContext
     {
         public RESTDbContext() : base(TinyERP.Common.Config.Configuration.Instance.UserManagementDbContext.Name)
         {

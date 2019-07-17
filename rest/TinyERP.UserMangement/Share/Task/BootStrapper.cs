@@ -5,13 +5,14 @@
     using TinyERP.UserManagement.Share.Facade;
     using TinyERP.UserMangement.Service;
     using TinyERP.UserMangement.Share.Facade;
-    using System.Configuration;
+    using TinyERP.UserMangement.Repository;
 
     public class BootStrapper : IBootStrapper
     {
         public void Execute()
         {
             IoC.RegisterAsTransient<IUserService, UserService>();
+            IoC.RegisterAsTransient<IUserRepository, UserRepository>(); 
             Common.IntegrationModeType remote = TinyERP.Common.Config.Configuration.Instance.UserManagement.IntegrationMode;
             if (remote != Common.IntegrationModeType.Remote)
             {

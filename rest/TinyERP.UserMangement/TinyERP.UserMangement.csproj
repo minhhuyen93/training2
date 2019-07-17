@@ -60,6 +60,8 @@
     <Compile Include="Api\UsersController.cs" />
     <Compile Include="Context\IUserManagementDbContext.cs" />
     <Compile Include="Context\RESTDbContext.cs" />
+    <Compile Include="Repository\IUserRepository.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Service\IUserService.cs" />
     <Compile Include="Service\UpateUserRequest.cs" />
     <Compile Include="Service\UserService.cs" />

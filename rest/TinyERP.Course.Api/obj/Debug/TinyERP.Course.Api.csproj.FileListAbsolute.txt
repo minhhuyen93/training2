@@ -75,6 +75,7 @@ G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.User
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\WebGrease.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.UserManagement.Share.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.Common.pdb
+G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.Common.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.Course.pdb
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.Course.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.UserMangement.pdb
@@ -83,10 +84,10 @@ G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\Castle.Core.
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\Castle.Windsor.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\EntityFramework.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\EntityFramework.SqlServer.xml
+G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\Newtonsoft.Json.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\System.Net.Http.Formatting.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\System.Web.Http.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\System.Web.Http.Cors.xml
-G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\Newtonsoft.Json.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\System.Web.Helpers.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\System.Web.Http.WebHost.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\System.Web.Mvc.xml
@@ -100,10 +101,9 @@ G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\System.Diagn
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.UserManagement.Share.pdb
+G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.UserManagement.Share.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\TinyERP.Course.Api.csprojResolveAssemblyReference.cache
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\TinyERP.Course.Api.csproj.CoreCompileInputs.cache
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\TinyERP.Course.Api.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\REST.dll
 G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\obj\Debug\REST.pdb
-G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.Common.dll.config
-G:\training\learningarchitech\training2\rest\TinyERP.Course.Api\bin\TinyERP.UserManagement.Share.dll.config

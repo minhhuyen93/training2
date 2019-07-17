@@ -3,6 +3,7 @@ G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\De
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.UserManagement.Share.pdb
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.Common.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Castle.Windsor.dll
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\EntityFramework.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\System.Web.Http.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\System.Net.Http.Formatting.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Newtonsoft.Json.dll
@@ -10,6 +11,7 @@ G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\De
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.Common.pdb
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\TinyERP.Common.dll.config
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Castle.Windsor.xml
+G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\EntityFramework.xml
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\System.Web.Http.xml
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\System.Net.Http.Formatting.xml
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Newtonsoft.Json.xml
@@ -19,5 +21,3 @@ G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\De
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csproj.CopyComplete
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.dll
 G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.pdb
-G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\EntityFramework.dll
-G:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\EntityFramework.xml

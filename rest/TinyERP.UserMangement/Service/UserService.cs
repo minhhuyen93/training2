@@ -2,46 +2,52 @@
 {
     using System.Collections.Generic;
     using System.Linq;
-    using TinyERP.Common.Common.Data;
+    using TinyERP.Common.Common.Data.Uow;
+    using TinyERP.Common.Common.IoC;
     using TinyERP.Common.Common.Validation;
+    using TinyERP.Common.Services;
     using TinyERP.UserManagement.Share.Dto;
     using TinyERP.UserMangement.Aggregate;
     using TinyERP.UserMangement.Context;
+    using TinyERP.UserMangement.Repository;
 
-    public class UserService: IUserService
+    public class UserService : BaseService, IUserService
     {
         public IList<User> GetUsers()
         {
-            IUserManagementDbContext context = DbContextFactory.Create<IUserManagementDbContext>();
-            return context.Users.ToList();
+            IUserRepository userRepo = IoC.Resolve<IUserRepository>();
+            return userRepo.GetUsers();
         }
 
         public User GetUser(int userId)
         {
-            RESTDbContext context = new RESTDbContext();
-            return context.Users.FirstOrDefault(item => item.Id == userId);
+            IUserRepository userRepo = IoC.Resolve<IUserRepository>();
+            return userRepo.GetById(userId);
         }
 
         public User CreateUser(CreateUserRequest request)
         {
-            this.Validate(request);
-            RESTDbContext context = new RESTDbContext();
-            User user = new User()
+            using (IUnitOfWork uow = this.CreateUnitOfWork<User>())
             {
-                FirstName = request.FirstName,
-                LastName = request.LastName,
-                UserName = request.UserName
-            };
-            context.Users.Add(user);
-            context.SaveChanges();
+                IUserRepository repo = IoC.Resolve<IUserRepository>(uow);
+                User user = new User()
+                {
+                    FirstName = request.FirstName,
+                    LastName = request.LastName,
+                    UserName = request.UserName
+                };
+                repo.Add(user);
+                uow.Commit();
 
-            return this.GetUser(user.Id);
+                return this.GetUser(user.Id);
+            }
         }
 
         private void Validate(CreateUserRequest request)
         {
             ValidationException validator = ValidationHelper.Validate(request, "common.invalid.request");
-            if (request.UserName=="abc") {
+            if (request.UserName == "abc")
+            {
                 validator.Add(new ValidationError("addNewUser.userNameWasUsed", "user_name", request.UserName));
             }
             validator.ThrowIfError(); ;
