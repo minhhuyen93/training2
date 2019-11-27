@@ -1,7 +1,6 @@
 import { IConnector } from "./iconnector";
 import { Promise, PromiseFactory } from "../models/promise";
 import { Http } from "@angular/http";
-import { PromiseObservable } from "rxjs/observable/PromiseObservable";
 import { HttpStatusCode, IoCNames } from "../models/enum";
 import { IEventManager } from "../event/ieventManager";
 import { IResponseData } from "../models/iResponseData";

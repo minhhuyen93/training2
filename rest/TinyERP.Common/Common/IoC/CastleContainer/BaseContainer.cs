@@ -16,14 +16,18 @@ namespace TinyERP.Common.Common.IoC.CastleContainer
             this.container = new WindsorContainer();
         }
 
-        public void RegisterAsSingleton<IInterface, Impl>() where IInterface : class where Impl : IInterface
+        public void RegisterAsSingleton<IInterface, Impl>() 
+            where IInterface : class where Impl : IInterface
         {
-            this.container.Register(Component.For<IInterface>().ImplementedBy<Impl>().LifestyleSingleton());
+            this.container.Register(Component.For<IInterface>()
+                .ImplementedBy<Impl>().LifestyleSingleton());
         }
 
-        public void RegisterAsTransient<IInterface, Impl>() where IInterface : class where Impl : IInterface
+        public void RegisterAsTransient<IInterface, Impl>() 
+            where IInterface : class where Impl : IInterface
         {
-            this.container.Register(Component.For<IInterface>().ImplementedBy<Impl>().LifestyleTransient());
+            this.container.Register(Component.For<IInterface>()
+                .ImplementedBy<Impl>().LifestyleTransient());
         }
 
         public TResult Resolve<TResult>(object[] args = null) where TResult : class

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Reflection;
-using TinyERP.Common.Common.Attribute;
-using TinyERP.Common.Common.Helper;
-
-namespace TinyERP.Common.Common.Data
+﻿namespace TinyERP.Common.Common.Data
 {
+    using System;
+    using System.Reflection;
+    using TinyERP.Common.Common.Attribute;
+    using TinyERP.Common.Common.Helper;
     public class DbContextFactory
     {
         public static IDbContext Create<IDbContext>()

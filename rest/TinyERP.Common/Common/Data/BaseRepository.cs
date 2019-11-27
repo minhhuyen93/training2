@@ -11,13 +11,9 @@
 
         public BaseRepository(IDbContext dbContext, IOMode mode = IOMode.Write)
         {
+
             this.DbSet = dbContext.GetDbSet<TEntity>(mode);
             this.dbContext = dbContext;
-        }
-
-        public static IDbContext Create<IDbContextType>() where IDbContextType : IDbContext
-        {
-            return DbContextFactory.Create<IDbContextType>();
         }
 
         public void Add(TEntity entity)

@@ -40,24 +40,6 @@ export class ResourceManager implements IResourceManager{
         });
         return def;
     }
-    /**
-     * 
-     * locales={
-     *      common:{},
-            * users:{},
-            * addNewUser:{
-                    "title":"Add new user",
-                    "firstName":"First name",
-                    "lastName":"Last name",
-                    "userName":"User name",
-                    "firstNameWasRequired":"First name was requried"
-                }
-     * };
-     * addNewUser.firstNameWasRequired.invalid =>First name was requried
-     * segments = [addNewUser,firstNameWasRequired, invalid]
-     * 
-     * result="First name was requried"
-     */
     public resolve(key:string, context:any=null):string{
         let segments:Array<string>=key.split(".");
         let result=this.locales;
