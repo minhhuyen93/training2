@@ -41,5 +41,14 @@ namespace TinyERP.Common.Config
                 return (DatabaseConnectionsElement)this["databaseConnections"];
             }
         }
+        [ConfigurationProperty("tasks")]
+        [ConfigurationCollection(typeof(ApplicationTasksElement), AddItemName = "task", ClearItemsName = "clear", RemoveItemName = "remove")]
+        public ApplicationTasksElement ApplicationTasks
+        {
+            get
+            {
+                return (ApplicationTasksElement)this["tasks"];
+            }
+        }
     }
 }

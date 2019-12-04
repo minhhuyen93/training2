@@ -9,7 +9,11 @@ namespace REST
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
-        IApplication app = ApplicationFactory.Create(ApplicationType.WebApi);
+        private IApplication app;
+        public WebApiApplication()
+        {
+            this.app = ApplicationFactory.Create(ApplicationType.WebApi);
+        }
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

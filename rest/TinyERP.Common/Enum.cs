@@ -15,4 +15,9 @@
     {
         WebApi = 1
     }
+    public enum TaskRunningMode
+    {
+        AllowAll = 1,
+        DenyAll = 2
+    }
 }
