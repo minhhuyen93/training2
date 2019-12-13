@@ -1,10 +1,11 @@
 ﻿using System.Configuration;
 using TinyERP.Common.Common.IoC;
 using TinyERP.Common.Common.Task;
+using TinyERP.Common.Tasks;
 
 namespace TinyERP.UserManagement.Share.Facade
 {
-    public class Bootstrapper : IBootStrapper
+    public class Bootstrapper : BaseTask, IBootStrapper
     {
         public void Execute()
         {

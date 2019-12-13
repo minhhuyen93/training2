@@ -1,5 +1,8 @@
-﻿using TinyERP.Common.Common.Helper;
+﻿using System;
+using System.Collections.Generic;
+using TinyERP.Common.Common.Helper;
 using TinyERP.Common.Common.Task;
+using TinyERP.Common.Tasks;
 
 namespace TinyERP.Common.Common.Application
 {
@@ -19,6 +22,19 @@ namespace TinyERP.Common.Common.Application
         {
             AssemblyHelper.Execute<IApplicationStarted>();
             AssemblyHelper.Execute<IBootStrapper>();
+        }
+
+        public void OnApplicationErrors(IList<Exception> errors)
+        {
+            ITaskArgument arg = this.GetTaskArgument();
+            arg.Data = errors;
+            AssemblyHelper.Execute<IApplicationError>(arg);
+        }
+        private ITaskArgument GetTaskArgument()
+        {
+            ITaskArgument arg = new TaskArgument();
+            arg.Application = this;
+            return arg;
         }
     }
 }

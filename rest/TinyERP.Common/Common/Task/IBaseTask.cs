@@ -2,6 +2,8 @@
 {
     public interface IBaseTask
     {
-        void Execute();
+        int Priority { get; }
+        ApplicationType AppType { get; }
+        void Execute(ITaskArgument arg);
     }
 }

@@ -9,14 +9,28 @@
 
     public class AssemblyHelper
     {
-        public static void Execute<ITask>() where ITask : IBaseTask
+        public static void Execute<ITask>(ITaskArgument arg = null, bool runInOrder = true) where ITask : IBaseTask
         {
             IList<Type> types = GetTypes<ITask>();
             if (types.Count() == 0) { return; }
+            if (runInOrder)
+            {
+                IList<ITask> instances = new List<ITask>();
+                foreach (var type in types)
+                {
+                    instances.Add(AssemblyHelper.CreateInstance<ITask>(type));
+                }
+                instances = instances.OrderByDescending(item => item.Priority).ToList();
+                foreach (var instance in instances)
+                {
+                    instance.Execute(arg);
+                    return;
+                }
+            }
             foreach (var type in types)
             {
                 ITask task = AssemblyHelper.CreateInstance<ITask>(type);
-                task.Execute();
+                task.Execute(arg);
             }
         }
 

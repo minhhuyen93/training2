@@ -301,3 +301,6 @@ E:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.csprojAssemblyR
 E:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.csproj.CopyComplete
 E:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.dll
 E:\training\learningarchitech\training2\rest\REST\obj\Debug\REST.pdb
+E:\training\learningarchitech\training2\rest\REST\bin\log4net.dll
+E:\training\learningarchitech\training2\rest\REST\bin\log4net.xml
+E:\training\learningarchitech\training2\rest\REST\bin\Config\configuration.Config

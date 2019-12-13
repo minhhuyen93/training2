@@ -4,6 +4,14 @@
     using TinyERP.Common.Config;
     public class BaseTask : IBaseTask
     {
+        public int Priority { get; private set; }
+        public ApplicationType AppType { get; set; }
+        public BaseTask(ApplicationType appType = ApplicationType.All, TaskPriority priority = TaskPriority.Normal)
+        {
+            this.Priority = (int)priority;
+            this.AppType = appType;
+        }
+
         protected bool Enable
         {
             get
@@ -13,11 +21,11 @@
                 return config != null ? config.Enable : runningMode == TaskRunningMode.AllowAll;
             }
         }
-        public void Execute()
+        public void Execute(ITaskArgument arg)
         {
             if (!this.Enable) { return; }
-            this.ExecuteInternal();
+            this.ExecuteInternal(arg);
         }
-        protected virtual void ExecuteInternal() { }
+        protected virtual void ExecuteInternal(ITaskArgument arg) { }
     }
 }

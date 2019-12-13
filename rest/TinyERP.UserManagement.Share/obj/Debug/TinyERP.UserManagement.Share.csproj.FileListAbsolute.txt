@@ -43,3 +43,6 @@ E:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\De
 E:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.csproj.CopyComplete
 E:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.dll
 E:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\obj\Debug\TinyERP.UserManagement.Share.pdb
+E:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\log4net.dll
+E:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\log4net.xml
+E:\training\learningarchitech\training2\rest\TinyERP.UserManagement.Share\bin\Debug\Config\configuration.Config

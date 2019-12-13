@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -13,6 +15,7 @@ namespace REST
         public WebApiApplication()
         {
             this.app = ApplicationFactory.Create(ApplicationType.WebApi);
+            this.Error += Application_Error;
         }
         protected void Application_Start()
         {
@@ -27,6 +30,10 @@ namespace REST
         protected void Application_End()
         {
             this.app.OnApplicationEnding();
+        }
+        private void Application_Error(object sender, EventArgs e)
+        {
+            this.app.OnApplicationErrors(((HttpApplication)sender).Context.AllErrors);
         }
     }
 }

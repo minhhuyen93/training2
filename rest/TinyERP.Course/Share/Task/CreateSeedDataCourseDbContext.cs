@@ -1,12 +1,13 @@
 ﻿namespace TinyERP.Course.Share.Task
 {
     using TinyERP.Common.Common.IoC;
+    using TinyERP.Common.Common.Task;
     using TinyERP.Common.Tasks;
     using TinyERP.Course.Dto;
     using TinyERP.Course.Service;
     public class CreateSeedDataCourseDbContext : BaseTask, ICreateSeedDataCourseDbContext
     {
-        protected override void ExecuteInternal()
+        protected override void ExecuteInternal(ITaskArgument arg)
         {
             ICourseService courseService = IoC.Resolve<ICourseService>();
             CreateCourseRequest request = new CreateCourseRequest();
